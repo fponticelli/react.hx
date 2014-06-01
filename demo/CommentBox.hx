@@ -1,12 +1,12 @@
 import react.React;
 
 class CommentBox extends React {
-	static function main() {
-		React.renderComponent(
-			@dom '<CommentBox url="comments.json" pollInterval={2000} />',
-			js.Browser.document.getElementById('content')
-		);
-	}
+  static function main() {
+    React.renderComponent(
+      @dom '<CommentBox url="comments.json" pollInterval={2000} />',
+      js.Browser.document.getElementById('content')
+    );
+  }
 
   override public function getInitialState() {
     return {data: []};
@@ -37,16 +37,16 @@ class CommentBox extends React {
     http.request(true);
   }
 
-	public function render() {
-		return @dom '
+  public function render() {
+    return @dom '
       <div className="commentBox">
-  			<h1>Comments</h1>
+        <h1>Comments</h1>
         <CommentList data={this.state.data} />
         <CommentForm
           onCommentSubmit={this.handleCommentSubmit}
         />
-  		</div>';
-	}
+      </div>';
+  }
 }
 
 class CommentList extends React {

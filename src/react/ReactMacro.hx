@@ -84,7 +84,7 @@ React.createClass((function() {
   static function createDom(code : String) {
     if(!sys.FileSystem.exists('node_modules/react-tools'))
       Sys.command('npm', ['install', 'react-tools']);
-    code = '"/** @jsx React.DOM */ ' + code.substr(1, code.length - 2).replace('\\n', ' ').trim() + '"';
+    code = '"/** @jsx React.DOM */ ' + code.substr(1, code.length - 2).replace('\\n', ' ').replace('\\t', '').replace(String.fromCharCode(13), '').trim() + '"';
     var n = 'process.stdout.write(require("react-tools").transform($code))',
       proc = new sys.io.Process('node', []);
     proc.stdin.writeString(n);
@@ -105,7 +105,7 @@ main map mark menu menuitem meta meter nav noscript object ol optgroup option
 output p param pre progress q rp rt ruby s samp script section select small
 source span strong style sub summary sup table tbody td textarea tfoot th
 thead time title tr track u ul var video wbr circle defs g line linearGradient path polygon polyline radialGradient rect
-stop svg text".split(" ");
+stop svg text" .replace(String.fromCharCode(13), '').split(" ");
 
   public static var domAttributes = "accept accessKey action allowFullScreen allowTransparency alt async
 autoComplete autoFocus autoPlay cellPadding cellSpacing charSet checked
@@ -117,6 +117,6 @@ preload radioGroup readOnly rel required role rowSpan rows sandbox scope
 scrollLeft scrollTop seamless selected size span spellCheck src srcDoc step
 style tabIndex target title type value width wmode cx cy d fill fx fy gradientTransform gradientUnits offset points r rx ry
 spreadMethod stopColor stopOpacity stroke strokeLinecap strokeWidth textAnchor transform
-version viewBox x1 x2 x y1 y2 y".split(" "); // + data-* & aria-*
+version viewBox x1 x2 x y1 y2 y" .replace(String.fromCharCode(13), '').split(" "); // + data-* & aria-*
   // TODO more non standard HTML attrs here http://facebook.github.io/react/docs/special-non-dom-attributes.html
 }

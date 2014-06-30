@@ -3,8 +3,9 @@ react.hx
 
 This is a fork of Franco Ponticelli's React.hx - Haxe wrap to React.js (proof of concept)
 
-*example-commentbox* (renamed from *demo*) closely follows the official React tutorial: http://facebook.github.io/react/docs/tutorial.html
-*example-filterproducts* roughly follows the "Thinking in React" tutorial: http://facebook.github.io/react/docs/thinking-in-react.html
+**example-commentbox** (renamed from *demo*) closely follows the official React tutorial: http://facebook.github.io/react/docs/tutorial.html
+
+**example-filterproducts** roughly follows the "Thinking in React" tutorial: http://facebook.github.io/react/docs/thinking-in-react.html
 
 
 Changes from original react.hx:

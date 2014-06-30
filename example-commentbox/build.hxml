@@ -1,6 +1,5 @@
 -js bin/demo.js
 -main CommentBox
--lib tink_macro
--lib markdown
 -cp src
 -cp ../src
+-cp ../libs

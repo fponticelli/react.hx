@@ -1280,53 +1280,53 @@ function $iterator(o) { if( o instanceof Array ) return function() { return HxOv
 var $_, $fid = 0;
 function $bind(o,m) { if( m == null ) return null; if( m.__id__ == null ) m.__id__ = $fid++; var f; if( o.hx__closures__ == null ) o.hx__closures__ = {}; else f = o.hx__closures__[m.__id__]; if( f == null ) { f = function(){ return f.method.apply(f.scope, arguments); }; f.scope = o; f.method = m; o.hx__closures__[m.__id__] = f; } return f; }
 CommentBox = 
-React.createClass((function() {
-  var statics = {};
-  for(var field in CommentBox)
-    statics[field] = CommentBox[field];
-  var c = new CommentBox;
-  for(var field in CommentBox.prototype) {
-    c[field] = CommentBox.prototype[field];
-  }
-  c.statics = statics;
-  return c;
-})());
+					React.createClass((function() {
+						var statics = {};
+						for(var field in CommentBox)
+							statics[field] = CommentBox[field];
+						var c = new CommentBox;
+						for(var field in CommentBox.prototype) {
+							c[field] = CommentBox.prototype[field];
+						}
+						c.statics = statics;
+						return c;
+					})());
 CommentList = 
-React.createClass((function() {
-  var statics = {};
-  for(var field in CommentList)
-    statics[field] = CommentList[field];
-  var c = new CommentList;
-  for(var field in CommentList.prototype) {
-    c[field] = CommentList.prototype[field];
-  }
-  c.statics = statics;
-  return c;
-})());
+					React.createClass((function() {
+						var statics = {};
+						for(var field in CommentList)
+							statics[field] = CommentList[field];
+						var c = new CommentList;
+						for(var field in CommentList.prototype) {
+							c[field] = CommentList.prototype[field];
+						}
+						c.statics = statics;
+						return c;
+					})());
 CommentForm = 
-React.createClass((function() {
-  var statics = {};
-  for(var field in CommentForm)
-    statics[field] = CommentForm[field];
-  var c = new CommentForm;
-  for(var field in CommentForm.prototype) {
-    c[field] = CommentForm.prototype[field];
-  }
-  c.statics = statics;
-  return c;
-})());
+					React.createClass((function() {
+						var statics = {};
+						for(var field in CommentForm)
+							statics[field] = CommentForm[field];
+						var c = new CommentForm;
+						for(var field in CommentForm.prototype) {
+							c[field] = CommentForm.prototype[field];
+						}
+						c.statics = statics;
+						return c;
+					})());
 Comment = 
-React.createClass((function() {
-  var statics = {};
-  for(var field in Comment)
-    statics[field] = Comment[field];
-  var c = new Comment;
-  for(var field in Comment.prototype) {
-    c[field] = Comment.prototype[field];
-  }
-  c.statics = statics;
-  return c;
-})());
+					React.createClass((function() {
+						var statics = {};
+						for(var field in Comment)
+							statics[field] = Comment[field];
+						var c = new Comment;
+						for(var field in Comment.prototype) {
+							c[field] = Comment.prototype[field];
+						}
+						c.statics = statics;
+						return c;
+					})());
 if(Array.prototype.indexOf) HxOverrides.indexOf = function(a,o,i) {
 	return Array.prototype.indexOf.call(a,o,i);
 };

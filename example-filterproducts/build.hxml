@@ -1,5 +1,5 @@
 -js bin/app.js
 -main App
--lib tink_macro
 -cp src
 -cp ../src
+-cp ../libs

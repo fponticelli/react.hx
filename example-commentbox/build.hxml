@@ -1,0 +1,5 @@
+-js bin/demo.js
+-main CommentBox
+-cp src
+-cp ../src
+-cp ../libs

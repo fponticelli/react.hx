@@ -12,7 +12,7 @@ Changes from original react.hx:
 - hack to allow React classes to live in other than package root (see example-filterproducts)
 - haxelib library dependecies are replaced with inclusion in /libs - to avoid problems with react.hx incompatibility with later tink_core 1.0.0-rc* versions
 
-*node* and *nmp* need to be installed on your machine
+*node* and *npm* need to be installed on your machine
 
 
 
